@@ -73,4 +73,10 @@ aside{
     .button4{
         background-color: #D9827C;
     }
+    .top_links{
+        display: flex;
+        justify-content: end;
+        align-items: flex-end;
+        font-size: 20px;
+    }
 }
