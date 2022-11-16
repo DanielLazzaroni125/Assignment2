@@ -29,6 +29,7 @@ aside{
         background-color: #F4E9DE;
         height: 100vh;
         margin: 0;
+        color: #5394A0;
     }
     .top{
         grid-area: top_content;
