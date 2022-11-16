@@ -60,23 +60,34 @@ aside{
         color: #fff;
         text-shadow: 1px 1px 1px #000;
         border-radius: 10px;
+        margin: 10px;
     }
     .button1{
         background-color: #5394A0;
+        float: left;
     }
     .button2{
         background-color: #6F6A87;
+        float: right;
     }
     .button3{
         background-color: #5394A0;
+        float: right;
     }
     .button4{
         background-color: #D9827C;
+        float: right;
     }
     .top_links{
         display: flex;
         justify-content: end;
         align-items: flex-end;
         font-size: 20px;
+        margin: 10px;
+    }
+    textarea{
+        height: 200px;
+        width: 96%;
+        margin: 15px;
     }
 }
