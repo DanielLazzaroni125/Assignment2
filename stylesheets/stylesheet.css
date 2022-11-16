@@ -20,14 +20,14 @@ aside{
         display: grid;
         grid-template-columns: 1fr 4fr;
         grid-template-rows: 1fr 3fr 1fr;
-        background-color: #E6CFB2;
+        background-color: #F4E9DE;
         height: 100vh;
         margin: 0;
     }
     aside{
         grid-column: 1;
         grid-row: 1/4;
-        background-color: #F0E2D1;
+        background-color: #F9F3EC;
         display: flex;
         flex-direction: column;
     }
@@ -89,5 +89,7 @@ aside{
         height: 200px;
         width: 96%;
         margin: 15px;
+        border: #7fabed 3px solid;
+        background: #f9f4eb;
     }
 }
