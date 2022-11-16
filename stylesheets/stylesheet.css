@@ -47,6 +47,10 @@ aside{
         grid-area: bottom_content;
         grid-column: 2;
     }
+    ul{
+        font-size: 25px;
+        list-style-type: square;
+    }
     aside{
         grid-column: 1;
         grid-row: 1/6;
