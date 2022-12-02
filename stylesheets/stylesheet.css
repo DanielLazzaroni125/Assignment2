@@ -108,6 +108,6 @@ textarea{
 @media(max-width:600px) {
     .grid-container {
         grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr;
+        grid-template-rows: 0.5fr
     }
 }
