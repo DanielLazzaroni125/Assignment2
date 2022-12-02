@@ -104,3 +104,10 @@ textarea{
     background: #f9f4eb;
     font-size: 20px;
 }
+
+@media(max-width:600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr;
+    }
+}
