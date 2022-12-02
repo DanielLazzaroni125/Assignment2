@@ -1,3 +1,11 @@
+.darkBody{
+    background-color: #00005C;
+}
+
+.darkSidebar{
+    background-color: #3B185F;
+}
+
 
 body{
     display: grid;
