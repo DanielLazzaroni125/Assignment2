@@ -53,12 +53,14 @@ function removeArea() {
 }
 
 const textAreaShow = document.getElementById('button1');
+const textArea = document.getElementById('textArea')
 
 function showArea() {
   var x = document.getElementById("textOptions");
   if (x.style.display === "none") {
     x.style.display = "block";
   }
+  textArea.value = ''
 }
 
 document.body.addEventListener("click", clickHandler)
