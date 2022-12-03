@@ -16,7 +16,8 @@ function changeBGColor(){
     document.body.classList.toggle("darkBody");
     var element = document.getElementById("aside");
     element.classList.toggle("darkSidebar");
-    
+    var textArea = document.getElementById('textArea');
+    textArea.classList.toggle('darkTextArea')
 
 }
 

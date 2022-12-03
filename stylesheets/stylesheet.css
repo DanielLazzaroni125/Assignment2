@@ -6,6 +6,10 @@
     background-color: #3B185F;
 }
 
+.darkTextArea{
+    background-color: #213A5C;
+}
+
 
 body{
     display: grid;
