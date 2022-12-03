@@ -1,3 +1,8 @@
+const notesArray = [{
+  title: 'note one',
+  body: 'this is my first note'
+}]
+
 function clickHandler(event) {
     console.log("clicked", event.target.textContent)
     if ((event.target.textContent === 'Dark Theme') || (event.target.textContent === 'Light Theme'))
@@ -63,7 +68,24 @@ function showArea() {
   textArea.value = ''
 }
 
+const save = document.getElementById('button3')
+
+function savePressed(){
+  if (textArea.value == ''){
+    alert('Nothing to save')
+  } else{
+    var name = prompt('What would you like to name this note? ')
+    notesArray.push({name: name, body: textArea.value})
+    textArea.value = ''
+  }
+  console.log(notesArray)
+}
+
 document.body.addEventListener("click", clickHandler)
 btn.addEventListener('click', changeText)
 textAreaHide.addEventListener('click', removeArea)
 textAreaShow.addEventListener('click', showArea)
+save.addEventListener('click', savePressed)
+
+
+
