@@ -69,6 +69,7 @@ function showArea() {
 }
 
 const save = document.getElementById('button3')
+const noteList = document.getElementById('noteList')
 
 function savePressed(){
   if (textArea.value == ''){
@@ -76,16 +77,22 @@ function savePressed(){
   } else{
     var name = prompt('What would you like to name this note? ')
     notesArray.push({name: name, body: textArea.value})
+    const listItem = document.createElement("li")
+    listItem.textContent = name
+    noteList.append(listItem)
     textArea.value = ''
   }
+  
   console.log(notesArray)
 }
+
 
 document.body.addEventListener("click", clickHandler)
 btn.addEventListener('click', changeText)
 textAreaHide.addEventListener('click', removeArea)
 textAreaShow.addEventListener('click', showArea)
 save.addEventListener('click', savePressed)
+
 
 
 
