@@ -4,7 +4,6 @@ const notesArray = [{
 }]
 
 function clickHandler(event) {
-    console.log("clicked", event.target.textContent)
     if ((event.target.textContent === 'Dark Theme') || (event.target.textContent === 'Light Theme'))
     {
         changeBGColor()
@@ -49,11 +48,11 @@ function changeButtonColor(){
 const textAreaHide = document.getElementById('button4');
 
 function removeArea() {
-  var x = document.getElementById("textOptions");
-  if (x.style.display === "none") {
-    x.style.display = "block";
+  var textOptions = document.getElementById("textOptions");
+  if (textOptions.style.display === "none") {
+    textOptions.style.display = "block";
   } else {
-    x.style.display = "none";
+    textOptions.style.display = "none"; 
   }
 }
 
@@ -61,9 +60,9 @@ const textAreaShow = document.getElementById('button1');
 const textArea = document.getElementById('textArea')
 
 function showArea() {
-  var x = document.getElementById("textOptions");
-  if (x.style.display === "none") {
-    x.style.display = "block";
+  var textOptions = document.getElementById("textOptions");
+  if (textOptions.style.display === "none") {
+    textOptions.style.display = "block";
   }
   textArea.value = ''
 }
@@ -82,16 +81,24 @@ function savePressed(){
     noteList.append(listItem)
     textArea.value = ''
   }
-  
-  console.log(notesArray)
 }
 
+//when li clicked, get text content of the li
+//next, find array object with that title
+//last, display its body text in the text area
+
+function liClicked(event){
+  var title = event.target.textContent
+  var body = notesArray.find(item => item.name === title)
+  textArea.value = body.body
+}
 
 document.body.addEventListener("click", clickHandler)
 btn.addEventListener('click', changeText)
 textAreaHide.addEventListener('click', removeArea)
 textAreaShow.addEventListener('click', showArea)
 save.addEventListener('click', savePressed)
+noteList.addEventListener('click', liClicked)
 
 
 
