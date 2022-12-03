@@ -86,15 +86,30 @@ button{
 .button1{
     background-color: #5394A0;
 }
+.darkTurquoise{
+    background-color: #045c5a;
+}
 .button2{
     background-color: #6F6A87;
 }
+.darkPurple{
+    background-color: #230046
+    ;
+}
 .button3{
     background-color: #5394A0;
+    
+}
+#button3{
     float: right;
 }
 .button4{
     background-color: #D9827C;
+}
+.darkRed{
+    background-color: #6f0000;
+}
+#button4{
     float: right;
 }
 .top_links{
