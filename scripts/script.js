@@ -40,5 +40,28 @@ function changeButtonColor(){
     btn4.classList.toggle('darkRed')
     btn4.classList.toggle('button4')
 }
+
+const textAreaHide = document.getElementById('button4');
+
+function removeArea() {
+  var x = document.getElementById("textOptions");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+const textAreaShow = document.getElementById('button1');
+
+function showArea() {
+  var x = document.getElementById("textOptions");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  }
+}
+
 document.body.addEventListener("click", clickHandler)
 btn.addEventListener('click', changeText)
+textAreaHide.addEventListener('click', removeArea)
+textAreaShow.addEventListener('click', showArea)
